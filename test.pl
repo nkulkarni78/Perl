@@ -12,3 +12,13 @@ print "$c";
 print "\n";
 $b = ($a+=2) * ($a-=2);
 print "$b\n";
+
+$a = "\Uhello";
+print "$a \n";
+$b = "\u$a";
+print "$b\n";
+$c = "HELLO";
+$d = "\L$c";
+print "$d\n";
+$e = "\u\L$c";
+print "$e\n";
