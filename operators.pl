@@ -92,3 +92,18 @@ print 17 < 7; #numerical operator returns empty since false
 print "\n";
 print 17 lt 7; #String operator returns true/1
 print "\n";
+
+#assignment operators can work as shown below. Binary assi-
+#gnment operations work similar to C language. leaving rea-
+#ders to try various binary assignment operations.
+
+$a = 7;
+print "$a\n";
+$b = $a + 7;
+print "$b\n";
+$c = "Week" . $b;
+print "$c\n";
+$d = ($a = 3) + 4;
+print "$d\n";
+$e = $f = 7;
+print "$e $f\n";
