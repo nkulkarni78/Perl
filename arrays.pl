@@ -76,4 +76,8 @@ $c=shift(@arr);
 print "$c";
 print"\n";
 unshift(@arr,$c);
-print "@arr";
+print "@arr\n";
+#Stdin can be used in array context by assiging it to array
+#variables. Ctrl-D helps to end stdin. Use case as below:
+@arr_inp = <STDIN>;
+print "@arr_inp\n";

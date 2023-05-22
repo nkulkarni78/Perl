@@ -22,3 +22,11 @@ $d = "\L$c";
 print "$d\n";
 $e = "\u\L$c";
 print "$e\n";
+
+#test for arrays
+
+@a = (1,2,3,4);
+$a = @a;
+print "$a\n";
+($a) = @a;
+print "$a";
