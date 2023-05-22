@@ -70,3 +70,10 @@ print "@arr";
 print "\n";
 $top=pop(@arr);
 print "$top \n";
+#shift pops from front or lower end and unshift pushes ele-
+#ment back at the beginning of array.
+$c=shift(@arr);
+print "$c";
+print"\n";
+unshift(@arr,$c);
+print "@arr";

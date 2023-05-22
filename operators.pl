@@ -107,3 +107,13 @@ $d = ($a = 3) + 4;
 print "$d\n";
 $e = $f = 7;
 print "$e $f\n";
+
+#Reverse operator reverses the given argument. It takes any
+#array or string and reverses the given variable.
+@arr_a = (0,1,2,3,4);
+@arr_b = reverse(@arr_a);
+print "@arr_a\n";
+print "@arr_b\n";
+$str = "Nikhil";
+$str_rev = reverse($str);
+print "$str_rev\n";
