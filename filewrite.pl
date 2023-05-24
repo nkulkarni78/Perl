@@ -8,4 +8,15 @@
 open(myfile,'>access.log');
 print myfile "Welcome.\n";
 print myfile "Hello Nikhil.\n";
+$input="";
+while($input ne END) {
+  print "Enter contents into file: ";
+  $input=<STDIN>;
+  if (chop($input) eq END) {
+    last;
+  }
+  else {
+    print myfile "$input\n";
+  }
+}
 close(myfile);

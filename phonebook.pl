@@ -17,7 +17,7 @@ while ($name ne END) {
 }
 
 $name= "";
-while ($Name ne END) {
+while ($name ne END) {
   print "Enter name to be searched:";
   $name=<STDIN>;
   chomp $name;

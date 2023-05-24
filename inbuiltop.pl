@@ -30,11 +30,13 @@ print "\n";
 
 # STDIN is used to read inputs from user mostly from termi-
 # nal. Includes newline char.
-
 $x = <STDIN>;
-chop($x);
-#shorthand notation of above two lines
-chop($x=<STDIN>)
-
+print "$x\n";
 #undef operator treated as 0 for numerical operations.Empty
 #for string operations. <STDIN> returns undef if no input.
+#tr operation uses charlist and translates to new charlist.
+$inp = <STDIN>;
+chop($inp);
+print"Entered input is: $inp\n";
+$inp =~ tr/a-z/A/;
+print "altered text: $inp";
